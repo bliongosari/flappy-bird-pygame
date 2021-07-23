@@ -44,7 +44,7 @@ base_x1 = 0
 base_x2 = d_width
 
 # bird
-bird = pygame.image.load('bluebird-upflap.png').convert()
+bird = pygame.image.load('bluebird-midflap.png').convert()
 bird_up = pygame.transform.rotate(bird, 30)
 bird_down = pygame.transform.rotate(bird, -45)
 bird_rect = bird_up.get_rect(center = (50, 216))
@@ -65,9 +65,9 @@ bird_down_red = pygame.transform.rotate(bird_red, -45)
 #bird_up_blue = pygame.transform.rotate(bird_blue, 30)
 #bird_down_blue = pygame.transform.rotate(bird_blue, -45)
 
-bird_blues = pygame.image.load('kay.png').convert()
-bird_blues.set_colorkey((0, 0, 0))
-bird_blue = pygame.transform.scale(bird_blues, (55, 55))
+bird_blue = pygame.image.load('bluebird-upflap.png').convert()
+# bird_blues.set_colorkey((0, 0, 0))
+# bird_blue = pygame.transform.scale(bird_blues, (55, 55))
 bird_up_blue = pygame.transform.rotate(bird_blue, 30)
 bird_down_blue = pygame.transform.rotate(bird_blue, -45)
 # pipe
